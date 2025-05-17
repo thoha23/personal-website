@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profil Web Developer</title>
+    <style>
+        /* CSS Styling */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            color: #333;
+            background-color: #f4f4f4;
+        }
+        
+        .container {
+            max-width: 1100px;
+            margin: auto;
+            padding: 0 20px;
+        }
+        
+        header {
+            background: #2e9ce0;
+            color: #ffffff;
+            padding: 30px 0;
+            text-align: center;
+        }
+        
+        header h1 {
+            margin: 20px 0 0;
+            font-size: 2.5em;
+        }
+        
+        header p {
+            font-size: 1.2em;
+            margin: 10px 0 0;
+        }
+        
+        .profile-img {
+            width: 200px;
+            height: 200px;
+            object-fit: cover;
+            margin: 0 auto;
+            display: block;
+            border: 5px solid #fff;
+            box-shadow: 0 0 15px rgba(0,0,0,0.2);
+            border-radius: 5px; /* Sedikit rounded corner */
+        }
+        
+        section {
+            padding: 30px;
+            background: #fff;
+            margin: 20px 0;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        
+        h2 {
+            color: #35424a;
+            border-bottom: 2px solid #35424a;
+            padding-bottom: 10px;
+            margin-top: 0;
+        }
+        
+        .skills-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+        }
+        
+        .skill {
+            background: #35424a;
+            color: #fff;
+            padding: 8px 15px;
+            border-radius: 20px;
+            font-size: 0.9em;
+        }
+        
+        .project {
+            margin-bottom: 25px;
+            padding-bottom: 20px;
+            border-bottom: 1px solid #eee;
+        }
+        
+        .project:last-child {
+            border-bottom: none;
+        }
+        
+        .project h3 {
+            margin-bottom: 5px;
+            color: #35424a;
+        }
+        
+        .project-links a {
+            display: inline-block;
+            margin-right: 15px;
+            color: #35424a;
+            text-decoration: none;
+            font-weight: bold;
+            padding: 5px 10px;
+            border: 1px solid #35424a;
+            border-radius: 4px;
+            transition: all 0.3s ease;
+        }
+        
+        .project-links a:hover {
+            background: #35424a;
+            color: #fff;
+        }
+        
+        footer {
+            text-align: center;
+            padding: 25px;
+            background: #35424a;
+            color: #fff;
+        }
+        
+        .social-links a {
+            color: #fff;
+            margin: 0 15px;
+            text-decoration: none;
+            font-size: 1.3em;
+            transition: color 0.3s ease;
+        }
+        
+        .social-links a:hover {
+            color: #42a5f5;
+        }
+        
+        .contact-info {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+        
+        .contact-item {
+            flex: 1;
+            min-width: 200px;
+            background: #f9f9f9;
+            padding: 15px;
+            border-radius: 5px;
+            border-left: 4px solid #35424a;
+        }
+        
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 2em;
+            }
+            
+            .profile-img {
+                width: 150px;
+                height: 150px;
+            }
+            
+            .skills-container {
+                justify-content: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <img src="gambar.2.jpg" alt="Foto Profil" class="profile-img">
+            <h1>MUHAMMAD THOHA</h1>
+            <p>Full Stack Web Developer</p>
+        </div>
+    </header>
+    
+    <div class="container">
+        <section id="tentang">
+            <h2>Tentang Saya</h2>
+            <p>Saya adalah seorang Full Stack Web Developer dengan pengalaman lebih dari 5 tahun dalam mengembangkan solusi web yang skalabel dan efisien. Saya mengkhususkan diri dalam membangun aplikasi web modern menggunakan teknologi terbaru.</p>
+            <p>Pendekatan saya dalam pengembangan web berfokus pada kode yang bersih, arsitektur yang baik, dan pengalaman pengguna yang optimal. Saya percaya bahwa website yang baik harus cepat, aman, dan mudah digunakan.</p>
+        </section>
+        
+        <section id="keahlian">
+            <h2>Keahlian Teknis</h2>
+            <div class="skills-container">
+                <span class="skill">HTML5</span>
+                <span class="skill">CSS3/Sass</span>
+                <span class="skill">JavaScript (ES6+)</span>
+                <span class="skill">TypeScript</span>
+                <span class="skill">React.js</span>
+                <span class="skill">Vue.js</span>
+                <span class="skill">Node.js</span>
+                <span class="skill">Express.js</span>
+                <span class="skill">MongoDB</span>
+                <span class="skill">PostgreSQL</span>
+                <span class="skill">Git/GitHub</span>
+                <span class="skill">Docker</span>
+                <span class="skill">AWS</span>
+                <span class="skill">RESTful APIs</span>
+                <span class="skill">GraphQL</span>
+            </div>
+        </section>
+        
+        <section id="proyek">
+            <h2>Proyek Terpilih</h2>
+            <div class="project">
+                <h3>Sistem Manajemen Konten Perusahaan</h3>
+                <p>Platform CMS custom untuk perusahaan dengan fitur manajemen konten, user roles, dan workflow publishing.</p>
+                <p><strong>Teknologi:</strong> React, Node.js, MongoDB, Redux</p>
+                <div class="project-links">
+                    <a href="#" target="_blank">Lihat Demo</a>
+                    <a href="#" target="_blank">Kode Sumber</a>
+                </div>
+            </div>
+            
+            <div class="project">
+                <h3>Aplikasi E-learning</h3>
+                <p>Platform pembelajaran online dengan video course, quiz interaktif, dan sertifikat penyelesaian.</p>
+                <p><strong>Teknologi:</strong> Vue.js, Laravel, MySQL, Firebase</p>
+                <div class="project-links">
+                    <a href="#" target="_blank">Lihat Demo</a>
+                    <a href="#" target="_blank">Kode Sumber</a>
+                </div>
+            </div>
+            
+            <div class="project">
+                <h3>Marketplace Lokal</h3>
+                <p>Platform e-commerce untuk UMKM lokal dengan sistem pembayaran terintegrasi dan manajemen inventori.</p>
+                <p><strong>Teknologi:</strong> Next.js, NestJS, PostgreSQL, Stripe API</p>
+                <div class="project-links">
+                    <a href="#" target="_blank">Lihat Demo</a>
+                    <a href="#" target="_blank">Kode Sumber</a>
+                </div>
+            </div>
+        </section>
+        
+        <section id="kontak">
+            <h2>Hubungi Saya</h2>
+            <div class="contact-info">
+                <div class="contact-item">
+                    <h3>Email</h3>
+                    <p><a href="mailto:email@contoh.com">toham695@gmail.com</a></p>
+                </div>
+                <div class="contact-item">
+                    <h3>Telepon/WhatsApp</h3>
+                    <p>+62 8591-9175-3783</p>
+                </div>
+                <div class="contact-item">
+                    <h3>Lokasi</h3>
+                    <p>Caruban, Jawa Timur, Indonesia</p>
+                </div>
+            </div>
+        </section>
+    </div>
+    
+    <footer>
+        <div class="social-links">
+            <a href="#" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a>
+            <a href="#" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+            <a href="#" target="_blank"><i class="fab fa-twitter"></i> Twitter</a>
+            <a href="#" target="_blank"><i class="fab fa-instagram"></i> Instagram</a>
+        </div>
+        <p>&copy; <span id="year"></span> Nama Anda. All rights reserved.</p>
+    </footer>
+
+    <script>
+        // Script sederhana untuk menampilkan tahun otomatis
+        document.getElementById('year').textContent = new Date().getFullYear();
+        
+        // Jika ingin menambahkan Font Awesome untuk ikon
+        const fontAwesome = document.createElement('link');
+        fontAwesome.rel = 'stylesheet';
+        fontAwesome.href = 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css';
+        document.head.appendChild(fontAwesome);
+    </script>
+</body>
+</html>
